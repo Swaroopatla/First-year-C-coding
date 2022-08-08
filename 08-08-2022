@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+int n,rem,arm,temp;
+printf("enter a 3 digit number:");
+scanf("%d",&n);
+temp=n;
+for(arm=0;n!=0;n=n/10)
+{
+rem=n%10;
+arm=arm+rem*rem*rem;
+}
+if(temp==arm)
+{
+printf("%d is armstrong",temp);
+}
+else
+{
+printf("%d is not armstrong",temp);
+}
+return 0;
+}
