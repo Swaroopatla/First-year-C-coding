@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int n,r;
+scanf("%d",&n);
+int encount=0,odcount=0,i=1;
+for(i=1;n!=0;i++)
+{
+r=n%10;
+if(r%2==0)
+encount++;
+else
+odcount++;
+n=n/10;
+}
+if(encount==odcount)
+{
+printf("Fancy Number ");
+}
+else
+printf("Not Fancy Number ");
+return 0;
+}
