@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+char c='A',c1='a';
+int i, j, n;
+printf("Enter any value");
+scanf("%d",&n);
+for(i=1;i<=5;i++)
+{
+for(j=1;j<=i;j++)
+{
+printf("%c%c\t",c,c1);
+c++;
+c1++;
+}
+printf("\n");
+}
+return 0;
+}
