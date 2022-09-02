@@ -1,0 +1,23 @@
+#include <stdio.h>
+int max_of_four(int a,int b,int c,int d)
+{
+    int nani;
+    if(a>b && a>c && a>d)
+    nani=a;
+    else if(b>c && b>d)
+    nani=b;
+    else if(c>d)
+    nani=c;
+    else 
+    nani=d;
+    return (nani);
+    }
+    int main()
+    {
+        int a,b,c,d;
+        int answer;
+        scanf("%d%d%d%d",&a,&b,&c,&d);
+        answer=max_of_four(a,b,c,d);
+        printf("%d",answer);
+        return 0;
+}
