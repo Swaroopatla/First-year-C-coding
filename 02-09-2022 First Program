@@ -1,4 +1,4 @@
-#include <stdio.h>
+Ki#include <stdio.h>
 #include <string.h>
 #include <math.h>
 #include <stdlib.h>
@@ -40,4 +40,4 @@ int main() {
     free(marks);
  
     return 0;
-}r
+}
