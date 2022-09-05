@@ -1,0 +1,22 @@
+#include<stdio.h>
+void display(int start,int end);
+int main()
+{
+int n,m;
+printf("Enter the range");
+scanf("%d%d",&n,&m);
+display(n,m);
+return 0;
+}
+void display(int start,int end)
+{
+if(start>end)
+{
+return;
+}
+else
+{
+printf("%d,",start);
+display(start+1,end);
+}
+}
